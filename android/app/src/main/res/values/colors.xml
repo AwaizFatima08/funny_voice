@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches GiggleColors.night so launch has no white flash. -->
+    <color name="splash">#1A1036</color>
+</resources>

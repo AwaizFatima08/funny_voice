@@ -1,0 +1,27 @@
+{
+  "_note": "AdMob config for Giggle Voice (Android), AdMob account homilabs.smc@gmail.com. Ad ids are not secrets; debug builds use Google's sample units and release builds these. App and units created 15 Nov 2026.",
+  "account": "homilabs.smc@gmail.com",
+  "publisher_id": "pub-2087846699268567",
+  "app": {
+    "name": "Giggle Voice",
+    "platform": "android",
+    "app_id": "ca-app-pub-2087846699268567~1712106601",
+    "status": "requires review (link the Play listing once published)"
+  },
+  "ad_units": {
+    "home_banner": {
+      "name": "gigglevoice_home_banner",
+      "format": "banner",
+      "id": "ca-app-pub-2087846699268567/8085943266",
+      "placement": "bottom of the home screen"
+    },
+    "break_interstitial": {
+      "name": "gigglevoice_break_interstitial",
+      "format": "interstitial",
+      "id": "ca-app-pub-2087846699268567/5459779928",
+      "placement": "after a voice finishes playing, every 4th play, at most once every 3 minutes; never while recording"
+    }
+  },
+  "app_ads_txt": "google.com, pub-2087846699268567, DIRECT, f08c47fec0942fa0",
+  "consent": "Google UMP before SDK init"
+}
