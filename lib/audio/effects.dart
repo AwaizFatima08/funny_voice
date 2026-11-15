@@ -31,7 +31,20 @@ enum VoiceEffect {
   String? get image => _images[this];
 }
 
-const Map<VoiceEffect, String> _images = {};
+// Approved homidev art (assets/ASSET-REGISTER.md). Giant and Alien keep their emoji until a retry is approved.
+const _art = 'assets/images';
+const Map<VoiceEffect, String> _images = {
+  VoiceEffect.chipmunk: '$_art/20261115-2347-funny-voice-encoder-image-02_raw.png',
+  VoiceEffect.helium: '$_art/20261116-0014-funny-voice-encoder-image-01_raw.png',
+  VoiceEffect.monster: '$_art/20261115-2358-funny-voice-encoder-image-01_raw.png',
+  VoiceEffect.robot: '$_art/20261115-2358-funny-voice-encoder-image-02_raw.png',
+  VoiceEffect.cave: '$_art/20261115-2358-funny-voice-encoder-image-05_raw.png',
+  VoiceEffect.underwater: '$_art/20261115-2358-funny-voice-encoder-image-03_raw.png',
+  VoiceEffect.radio: '$_art/20261116-0014-funny-voice-encoder-image-02_raw.png',
+  VoiceEffect.ghost: '$_art/20261116-0014-funny-voice-encoder-image-03_raw.png',
+  VoiceEffect.fast: '$_art/20261116-0014-funny-voice-encoder-image-04_raw.png',
+  VoiceEffect.slow: '$_art/20261116-0014-funny-voice-encoder-image-05_raw.png',
+};
 
 /// Turns a recorded WAV into the [effect]'s WAV. Pure and synchronous, so it can run
 /// in a background isolate.

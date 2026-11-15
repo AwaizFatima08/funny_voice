@@ -89,14 +89,12 @@ class _Header extends ConsumerWidget {
       child: Row(
         children: [
           ClipOval(
-            child: SizedBox.square(
-              dimension: 52,
-              child: heroArt != null
-                  ? Image.asset(heroArt!, fit: BoxFit.cover)
-                  : const ColoredBox(
-                      color: GiggleColors.violet,
-                      child: Center(child: Text('🎤', style: TextStyle(fontSize: 28))),
-                    ),
+            child: Image.asset(
+              heroArt,
+              width: 52,
+              height: 52,
+              fit: BoxFit.cover,
+              cacheWidth: 160,
             ),
           ),
           const SizedBox(width: 12),
@@ -437,7 +435,7 @@ class _EffectCard extends StatelessWidget {
                         ),
                         child: ClipOval(
                           child: image != null
-                              ? Image.asset(image, fit: BoxFit.cover)
+                              ? Image.asset(image, fit: BoxFit.cover, cacheWidth: 320)
                               : Center(
                                   child: Text(effect.emoji, style: const TextStyle(fontSize: 38)),
                                 ),
@@ -446,17 +444,17 @@ class _EffectCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 6),
-                  Text(
-                    effect.title,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontWeight: FontWeight.w800),
+                  // Scale down rather than cut off: some phones use a very large system font.
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(effect.title, style: const TextStyle(fontWeight: FontWeight.w800)),
                   ),
-                  Text(
-                    effect.tagline,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontSize: 11, color: Colors.white60),
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      effect.tagline,
+                      style: const TextStyle(fontSize: 11, color: Colors.white60),
+                    ),
                   ),
                 ],
               ),

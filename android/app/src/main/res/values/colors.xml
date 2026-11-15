@@ -2,4 +2,5 @@
 <resources>
     <!-- Matches GiggleColors.night so launch has no white flash. -->
     <color name="splash">#1A1036</color>
+    <color name="ic_launcher_background">#8150D3</color>
 </resources>
