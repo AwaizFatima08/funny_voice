@@ -17,7 +17,7 @@ Voice". General audience (13+), Homi's choice 15 Nov 2026. Started 15 Nov 2026.
 - Effects: pure Dart DSP in `lib/audio/` (WSOLA pitch shift, biquads, Freeverb-style reverb, echo, ring mod…),
   rendered in a background isolate and cached per recording. Nothing leaves the phone; no INTERNET use except ads.
 - Near-silent recordings are refused (peak < 0.01) and normalise gain is capped at 30x, so hiss is never blown up.
-- Graphics: Z-Image on homidev (asset pipeline, see ~/.claude/homidev.md); emoji stand in until approved art lands.
+- Graphics: Z-Image on homidev (asset pipeline, see ~/.claude/homidev.md); all voices but Reverse have approved character art.
 
 ## Ads
 AdMob homilabs.smc@gmail.com: app `~1712106601`, `gigglevoice_home_banner`, `gigglevoice_break_interstitial`

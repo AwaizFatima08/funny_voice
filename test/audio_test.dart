@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:math' as math;
 import 'dart:typed_data';
 
@@ -36,6 +37,13 @@ Float32List _voice(double seconds) {
 }
 
 void main() {
+  test('every effect image is a bundled asset file', () {
+    for (final e in VoiceEffect.values) {
+      final image = e.image;
+      if (image != null) expect(File(image).existsSync(), isTrue, reason: e.name);
+    }
+  });
+
   test('WAV round trip keeps samples and rate', () {
     final pcm = Pcm(_tone(440, 0.1), 22050);
     final back = decodeWav(encodeWav(pcm));

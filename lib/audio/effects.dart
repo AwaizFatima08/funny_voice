@@ -31,13 +31,15 @@ enum VoiceEffect {
   String? get image => _images[this];
 }
 
-// Approved homidev art (assets/ASSET-REGISTER.md). Giant and Alien keep their emoji until a retry is approved.
+// Approved homidev art (assets/ASSET-REGISTER.md). The emoji remain as accessible fallbacks.
 const _art = 'assets/images';
 const Map<VoiceEffect, String> _images = {
   VoiceEffect.chipmunk: '$_art/20261115-2347-funny-voice-encoder-image-02_raw.png',
   VoiceEffect.helium: '$_art/20261116-0014-funny-voice-encoder-image-01_raw.png',
+  VoiceEffect.giant: '$_art/20261116-0113-funny-voice-encoder-image-02_raw.png',
   VoiceEffect.monster: '$_art/20261115-2358-funny-voice-encoder-image-01_raw.png',
   VoiceEffect.robot: '$_art/20261115-2358-funny-voice-encoder-image-02_raw.png',
+  VoiceEffect.alien: '$_art/20261116-0037-funny-voice-encoder-image-01_raw.png',
   VoiceEffect.cave: '$_art/20261115-2358-funny-voice-encoder-image-05_raw.png',
   VoiceEffect.underwater: '$_art/20261115-2358-funny-voice-encoder-image-03_raw.png',
   VoiceEffect.radio: '$_art/20261116-0014-funny-voice-encoder-image-02_raw.png',
