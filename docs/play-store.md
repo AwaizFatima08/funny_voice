@@ -14,7 +14,9 @@ Chrome profile only has homi55@gmail.com (no developer account), so files are up
 - 17 Nov 2026, in Chrome (homilabs.smc@gmail.com is `/u/1/` there): icon, feature graphic and 2 screenshots uploaded
   and labelled as AI-generated (Z-Image art); store listing saved. Production: 178 countries targeted; release 1
   drafted with en-US notes. The Chrome upload tool is capped at 10 MB, so Homi uploads the AAB by hand.
-- To do: AAB into the production release, then Next → Send for review.
+- 17 Nov 2026: Homi uploaded the AAB; release 1 (1.0.0) "Ready to release" (21.9 MB new install, API 24+, target
+  36). Production release in 178 countries **sent for review** (11 changes). Managed publishing off, so it goes live on
+  approval.
 
 ## Data safety (the app itself collects nothing; answers cover the AdMob SDK)
 Collected and shared, not ephemeral, required: approximate location, app interactions, crash logs, diagnostics,
