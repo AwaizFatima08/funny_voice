@@ -11,8 +11,10 @@ Chrome profile only has homi55@gmail.com (no developer account), so files are up
   (IARC "All other app types", every answer No; contact homilabs.smc@gmail.com), government (no), financial (none),
   health (none), data safety, store settings (Entertainment, homilabs.smc@gmail.com, https://tools.homilabs.org),
   store listing text (`store/listing.md`).
-- To do: upload `store/play-icon-512.png`, `store/feature-graphic.png`, `store/screenshots/*.png` (1080×1920) and
-  `releases/v1.0.0-1/gigglevoice-1.0.0-1.aab`; create the production release (all countries) and send for review.
+- 17 Nov 2026, in Chrome (homilabs.smc@gmail.com is `/u/1/` there): icon, feature graphic and 2 screenshots uploaded
+  and labelled as AI-generated (Z-Image art); store listing saved. Production: 178 countries targeted; release 1
+  drafted with en-US notes. The Chrome upload tool is capped at 10 MB, so Homi uploads the AAB by hand.
+- To do: AAB into the production release, then Next → Send for review.
 
 ## Data safety (the app itself collects nothing; answers cover the AdMob SDK)
 Collected and shared, not ephemeral, required: approximate location, app interactions, crash logs, diagnostics,
