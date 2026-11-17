@@ -36,9 +36,9 @@ Oppo CPH2743 and Tab S9 FE are registered test devices.
   Its mic records silence, so real voice checks need a phone.
 
 ## Play
-1.0.0 (1) sent for review 17 Nov 2026 (Play app id 4973267646670436066). Details and all declarations:
-`docs/play-store.md`. After approval: AdMob → Giggle Voice → Add store; switch the tools.homilabs.org card to the
-Play link. Bump `version:` in pubspec before every new upload.
+1.0.0 (1) live on Google Play since 17 Nov 2026 (Play app id 4973267646670436066); store linked in AdMob, website
+card links to Play. Details and all declarations: `docs/play-store.md`. Bump `version:` in pubspec before every new
+upload.
 
 ## Gate before commit
 ```

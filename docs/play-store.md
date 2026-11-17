@@ -24,6 +24,10 @@ device or other IDs; purposes analytics, advertising or marketing, fraud prevent
 Encrypted in transit: yes. No accounts. Deletion question left unanswered (optional). Voice recordings stay on the
 phone and are not collected.
 
-## After the listing is live
-- AdMob → Apps → Giggle Voice → "Add store" to link the Play listing.
-- tools.homilabs.org hub card: swap "Coming soon" for the Play link (homilabs_tools repo, live upload over SSH).
+## Live (17 Nov 2026)
+- Approved and live: https://play.google.com/store/apps/details?id=com.homilabs.funnyvoice
+- tools.homilabs.org card switched to the Play link (live, verified).
+- AdMob: Play listing linked to app ~1712106601 (search by the full Play URL; the package name alone found nothing).
+  app-ads.txt verification still "couldn't verify" right after linking although tools.homilabs.org/app-ads.txt,
+  homilabs.org/app-ads.txt and the Play listing's website are all correct; AdMob's crawler needs time. Re-check in
+  AdMob → Apps → Giggle Voice → App settings → App verification after a day.
